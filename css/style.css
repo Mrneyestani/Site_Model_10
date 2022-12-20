@@ -1,0 +1,211 @@
+/* add font-face */
+@font-face {
+  font-family: IRANsans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/IRANSansWeb.eot") format("embedded-opentype"),
+    url("../font/IRANSansWeb.woff2") format("woff2"),
+    url("../font/IRANSansWeb.woff") format("woff"),
+    url("../font/IRANSansWeb.ttf") format("truetype");
+}
+
+/* ********************************************************************** */
+/*    و رنگ متن #fff  باشد .#FF0063 قرار دهید .پس زمینه متن انتخاب شده را  */
+/* Give the selection selector  a background of #FF0063 and color of #fff*/
+::selection {
+  background-color: #ff0063;
+  color: #fff;
+}
+
+/* ********************************************************************** */
+/* به عنصر <body> پس زمینه #bdc3c7 بدهید , font-family مشخص کنید.*/
+/* Give the <body> element a background of #bdc3c7*/
+body {
+  font-family: "IRANsans";
+  background-color: #bdc3c7;
+}
+
+/* ********************************************************************** */
+/*  وسط صفحه باشد و نوع فونت آن Cursive باشد .عنصر <h1> #9b59b6 را با رنگ  بسازید */
+/* Make the <h1> element #9b59b6 , align center , font family Cursive*/
+h1 {
+  font-family: cursive;
+  text-align: center;
+  color: #9b59b6;
+}
+/* ********************************************************************** */
+/*  پس زمینه کلاس background-image  یک تصویر ثابت داشته باشد*/
+/* The background of the background-imag class should have a fixed image */
+.background-imag {
+  background-image: url("../images/CSS-Selectors.png");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+/* ********************************************************************** */
+/* اولین فرزند div پس زمینه با رنگ  rgba(0, 0, 0, 0.5) داشته باشد */
+/* The first child div has a background color rgba(0, 0, 0, 0.5) */
+
+div:first-child {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+/* ********************************************************************** */
+/* به عناصر p , h2 padding 10px بدهید. */
+/* Make all p,h2 elements padding 10px */
+
+p,
+h2 {
+  padding: 10px;
+}
+/* ********************************************************************** */
+/*  text-shadow 3px 1px #fff با این مشخصات داشته باشد.عنصر <h2> orange را با رنگ  بسازید */
+/* Make all <h2> elements orange and text-shadow 3px 1px #fff*/
+
+div > h2 {
+  color: orange;
+  text-shadow: 3px 1px #fff;
+}
+/* ********************************************************************** */
+/* همه عناصر <li> را آبی کنید (آبی هگزادسیمال خود را انتخاب کنید) */
+/* Make all <li> elements blue(pick your own hexadecimal blue)*/
+div > ul > li {
+  color: blue;
+}
+/* ********************************************************************** */
+/* پس زمینه هر پاراگراف را به رنگ زرد تغییر دهید */
+/*Change the background on every paragraph to be yellow*/
+p {
+  background-color: #ffff69;
+}
+/* ********************************************************************** */
+/* کاری کنید که تمام input  دارای حاشیه قرمز 3 پیکسل باشند */
+/*Make all inputs have a 3px red border and margin 10px*/
+
+input {
+  border: 3px solid red;
+  margin: 10px;
+}
+/* ********************************************************************** */
+/* به هر چیز با کلاس «hello» پس‌زمینه سفید بدهید */
+/* Give everything with the class 'hello' a white background*/
+.hello {
+  background-color: #fff;
+}
+/* ********************************************************************** */
+/* به عنصر با شناسه «special» یک حاشیه آبی  2 پیکسلی بدهید (آبی rgb خود را انتخاب کنید) */
+/* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
+
+#special {
+  border: 2px solid blue;
+}
+/* ********************************************************************** */
+/*تمام <p> هایی که در داخل  divs تو در تو قرار دارند را با فونت 25 پیکسلی بسازید (اندازه قلم: 16 پیکسل) */
+/*Make all the <p>'s that are nested inside of divs 16px font(font-size: 16px)*/
+
+div > p {
+  font-size: 1rem;
+}
+/* ********************************************************************** */
+/* فقط input ‌های با نوع «text» پس‌زمینه خاکستری داشته باشند */
+/*Make only inputs with type 'text' have a gray background*/
+
+input[type="text"] {
+  background-color: gray;
+}
+
+input[type="password"] {
+  background-color: rgb(245, 248, 100);
+}
+/* ********************************************************************** */
+/* به هر دو <p> داخل <div> چهارم پس‌زمینه صورتی بدهید */
+/* Give both <p>'s inside the 4rd <div> a pink background*/
+div:nth-of-type(4) p {
+  background-color: pink;
+}
+/* ********************************************************************** */
+/* به دوم <p> داخل <div> چهارم یک حاشیه سفید 5 px بدهید */
+/* Give the 2nd <p> inside the 4rd <div> a 5px white border*/
+
+div:nth-of-type(4) p:nth-of-type(2) {
+  border: 5px solid white;
+}
+
+/* ********************************************************************** */
+/*  باشد  زیر عنصر <em>و یک خط نقطه چین با رنگ سبز <em> را در عنصر <div> چهارم سفید و فونت 20 پیکسلی (font-size:20px) کنید */
+/* Make the <em> in the 4rd <div> element white and 20px font(font-size:20px) and text-decoration underline dotted green 3px */
+
+div:nth-of-type(4) em {
+  color: white;
+  font-size: 20px;
+  text-decoration: underline dotted green;
+}
+
+/* ********************************************************************** */
+/* همه چک باکس‌های علامت‌گذاری شده دارای حاشیه سمت چپ 50 پیکسل باشند (حاشیه-راست: 50 پیکسل) */
+/*Make all "checked" checkboxes have a right margin of 50px(margin-right: 50px)*/
+
+input:cheched {
+  margin-right: 50px;
+}
+
+/* ********************************************************************** */
+/* همه label ها با حروف بزرگ باشد */
+/* Make the <label> elements all UPPERCASE without changing the HTML(definitely look this one up*/
+
+label {
+  text-transform: uppercase;
+}
+
+/* ********************************************************************** */
+/* حرف اول عنصر را با id "special" سبز و اندازه فونت 100 پیکسل (اندازه قلم: 100) ایجاد کنید. */
+/*Make the first letter of the element with id 'special' green and 100px font size(font-size: 100)*/
+
+#special::first-letter {
+  font-size: 100px;
+  color: green;
+}
+
+/* ********************************************************************** */
+/* رنگ عنصر <h1> را با نگه داشتن ماوس روی آن به آبی تغییر دهید */
+/*Make the <h1> element's color change to blue when hovered over */
+
+h1:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+/* ********************************************************************** */
+/*   در حالت visitedعناصر <a> را خاکستری کنید */
+/*Make the <a> element's that have been visited gray */
+
+a:visited {
+  color: gray;
+}
+
+/* ********************************************************************** */
+/* استایل دلخواه برای کلاس btn  در نظر بگیرید. */
+/* Give desired style to btn class */
+
+.btn {
+  background-color: #b33be2;
+  color: white;
+  padding: 10px 20px;
+  width: 140px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+/* ********************************************************************** */
+/* با نگه داشتن ماوس روی کلاس btn رنگ پس زمینه آن تغییر کند*/
+/* Change background of btn class on hover */
+
+.btn:hover {
+  background-color: #dc9ff4;
+  cursor: pointer;
+  color: #1e1a1a;
+}
